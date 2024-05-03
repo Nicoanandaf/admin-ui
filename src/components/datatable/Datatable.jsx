@@ -11,7 +11,7 @@ const columns = [
     headerName: "Age",
     type: "number",
     width: 90,
-  },
+  },//{ field: "catname", headerName: "Name", width: 130 },
   {
     field: "fullName",
     headerName: "Full name",

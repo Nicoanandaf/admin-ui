@@ -5,6 +5,9 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Mylist from "./pages/mylist/Mylist";
+import Widget from "./components/widget/Widget";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
@@ -23,6 +26,10 @@ function App() {
               <Route index element={<List />}></Route>
               <Route path=":userId" element={<Single />}></Route>
               <Route path="new" element={<New />}></Route>
+            </Route>
+            <Route path="categories">
+              <Route path="widget" element={<Widget />}></Route>
+              <Route index element={<Mylist />}></Route>
             </Route>
           </Route>
         </Routes>
