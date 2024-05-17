@@ -1,69 +1,69 @@
 import "./sidebar.scss";
 import { Link } from "react-router-dom";
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import InventoryIcon from '@mui/icons-material/Inventory';
-import StoreIcon from '@mui/icons-material/Store';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import LogoutIcon from '@mui/icons-material/Logout';
-import CategoryIcon from '@mui/icons-material/Category';
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import StoreIcon from "@mui/icons-material/Store";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import CategoryIcon from "@mui/icons-material/Category";
 
 const Sidebar = () => {
-    return (
-        <div className="sidebar">
-  <div className="top">
-    <Link to="/">
-      <span className="logo">Store</span>
-    </Link>
-  </div>
-  <hr />
-  <div className="center">
-    <ul>
-      <p className="title">MAIN</p>
-      <li>
-        <DashboardIcon className="icon"/>
-        <span>Dashboard</span>
-      </li>
-      <p className="title">LIST</p>
-      <Link to="/users">
-        <li>
-            <PersonOutlineIcon className="icon"/>
-          <span>Users</span>
-        </li>
-      </Link>
-      <Link to="/products">
-        <li>
-            <InventoryIcon className="icon"/>
-          <span>Products</span>
-        </li>
-      </Link>
-      <li>
-        <StoreIcon className="icon"/>
-        <span>Orders</span>
-      </li>
-      <Link to="/categories">
-        <li>
-          <CategoryIcon className="icon"/>
-          <span>Categories</span>
-        </li>
-      </Link>
-      <p className="title">USER</p>
-      <li>
-        <AccountCircleIcon className="icon"/>
-        <span>Profile</span>
-      </li>
-      <li>
-        <LogoutIcon className="icon"/>
-        <span>Logout</span>
-      </li>
-    </ul>
-  </div>
-  <div className="bottom">
-    <div className="colorOption"></div>
-    <div className="colorOption"></div>
-  </div>
-</div>
-    );
+  return (
+    <div className="sidebar">
+      <div className="top">
+        <Link to="/">
+          <span className="logo">Store</span>
+        </Link>
+      </div>
+      <hr />
+      <div className="center">
+        <ul>
+          <p className="title">MAIN</p>
+          <li>
+            <DashboardIcon className="icon" />
+            <span>Dashboard</span>
+          </li>
+          <p className="title">LIST</p>
+          <Link to="/users">
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products">
+            <li>
+              <CreditCardIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
+          <li>
+            <StoreIcon className="icon" />
+            <span>Orders</span>
+          </li>
+          <Link to="/categories">
+            <li>
+              <CategoryIcon className="icon" />
+              <span>Categories</span>
+            </li>
+          </Link>
+          <p className="title">USER</p>
+          <li>
+            <AccountCircleOutlinedIcon className="icon" />
+            <span>Profile</span>
+          </li>
+          <li>
+            <ExitToAppIcon className="icon" />
+            <span>Logout</span>
+          </li>
+        </ul>
+      </div>
+      <div className="bottom">
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Sidebar;
