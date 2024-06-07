@@ -1,16 +1,12 @@
-.mylist {
+.myList {
   display: flex;
   width: 100%;
 }
-.mylist .mylistContainer {
+.myList .myListContainer {
   flex: 6;
 }
-.mylist .mylistContainer .widgets,
-.mylist .mylistContainer .charts {
+.myList .myListContainer .widgets {
   display: flex;
   padding: 20px;
   gap: 20px;
-}
-.mylist .mylistContainer .charts {
-  padding: 5px 20px;
 }/*# sourceMappingURL=mylist.css.map */
