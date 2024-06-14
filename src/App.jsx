@@ -12,7 +12,6 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/AuthContext";
 
-
 function App() {
   const { darkMode } = useContext(DarkModeContext);
 
