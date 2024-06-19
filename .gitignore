@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Envoirement file
+# Enviroment file
 .env
+#sembarang

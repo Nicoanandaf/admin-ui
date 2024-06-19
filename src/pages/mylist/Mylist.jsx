@@ -1,27 +1,26 @@
 import "./mylist.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
-import MyDatatable from "../../components/mydatatable/Mydatatable";
+import Datatable from "../../components/datatable/Datatable";
+import Mydatatable from "../../components/mydatatable/Mydatatable";
 import Widget from "../../components/widget/Widget";
 
-const MyList = () => {
+const Mylist = () => {
   return (
-    <div className="myList">
+    <div className="mylist">
       <Sidebar />
-      <div className="myListContainer">
+      <div className="mylistContainer">
         <Navbar />
         <div className="widgets">
-          <Widget type="user" />
-          <Widget type="order" />
-          <Widget type="earning" />
-          <Widget type="earning" />
+            <Widget type="user"/>
+            <Widget type="order"/>
+            <Widget type="earning"/>
+            <Widget type="balance"/>
         </div>
-        <div className="table">
-          <MyDatatable title="All Data" />
-        </div>
+        <Mydatatable/>
       </div>
     </div>
   );
 };
 
-export default MyList;
+export default Mylist;

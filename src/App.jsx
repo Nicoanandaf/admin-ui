@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/AuthContext";
 
+
 function App() {
   const { darkMode } = useContext(DarkModeContext);
 
@@ -22,7 +23,7 @@ function App() {
   };
   
   const NotRequireAuth = ({ children }) => {
-    return currentUser ? <Navigate to="/" /> : children;
+    return currentUser ? <Navigate to="/login" /> : children;
   };
 
   return (

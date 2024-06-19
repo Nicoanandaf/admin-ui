@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => { 
-  console.log(process.env.REACT_APP_FIREBASE_KEY);
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +20,7 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
-        const user = userCredential.user; 
+        const user = userCredential.user;
         dispatch({type:"LOGIN", payload:user});
         navigate("/");
         console.log(user);
