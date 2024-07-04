@@ -15,11 +15,11 @@ const Navbar = () => {
         <div className="items">
           <div className="item">
             <DarkModeOutlinedIcon className="icon" 
-            onClick={()=> dispatch({type: "TOGGLE" })}/>
+            onClick={()=> dispatch({type: "DARK" })}/>
           </div>
           <div className="item">
             <img
-              src="https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2vHEcD6EMIMOzdx6Ydy4Lt6mKc3Zvl2j_b-Vhd_L-o-b6ALejjA0Xcj0SHsVT26WvClVWdqisLUykE6E9BkADT5BpxrOSE6TGlZvbOqkq0Xt6TPj0BSOsHQFdfiO4OIKMfN8nNAJf2Pgom2aHOKESmhOXUcIcXp8c_p8Sztkt7bl8bZcnAxkbS9dH/w1200-h630-p-k-no-nu/Logo%20UDINUS%20(Universitas%20Dian%20Nuswantoro).png"
               alt=""
               className="avatar"
             />

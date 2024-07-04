@@ -42,8 +42,10 @@ const Sidebar = () => {
     <ul>
       <p className="title">MAIN</p>
       <li>
+        <Link to="/">
         <DashboardIcon className="icon"/>
         <span>Dashboard</span>
+        </Link>
       </li>
       <p className="title">LIST</p>
       <Link to="/users">
@@ -69,10 +71,12 @@ const Sidebar = () => {
         </li>
       </Link>
       <p className="title">USER</p>
+      <Link to="/users">
       <li>
         <AccountCircleIcon className="icon"/>
         <span>Profile</span>
       </li>
+      </Link>
       <li onClick={handleLogout}>
         <LogoutIcon className="icon"/>
         <span>Logout</span>

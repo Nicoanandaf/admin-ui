@@ -8,11 +8,11 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, cateName: "Coffe" },
-  { id: 2, cateName: "Non Coffe" },
-  { id: 3, cateName: "Cake" },
-  { id: 4, cateName: "Pastry" },
-  { id: 5, cateName: "Cookie" },
+  { id: 1, cateName: "Makanan" },
+  { id: 2, cateName: "Minuman" },
+  { id: 3, cateName: "Cemilan" },
+  { id: 4, cateName: "Paket" },
+  { id: 5, cateName: "Buah" },
 ];
 
 /*const actionColumn = [
